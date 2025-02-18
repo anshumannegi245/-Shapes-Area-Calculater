@@ -1,0 +1,26 @@
+How this code works:
+
+display_menu(): Prints the menu options to the console.
+
+calculate_circle_area(), calculate_rectangle_area(), calculate_triangle_area(): These functions calculate the respective areas based on the user's input.  They also include error handling (checking for numeric input).
+
+main():
+
+This is the core of the program. It uses a while True loop to keep displaying the menu and processing user input until the user chooses to exit.
+It prompts the user to enter their choice.
+Error Handling: It uses a try-except block to handle potential ValueError exceptions. This occurs if the user enters something that can't be converted to an integer (e.g., text). This prevents the program from crashing.
+It uses if-elif-else statements to determine which calculation to perform based on the user's choice.
+It gets the necessary input (radius, length, width, base, height) from the user using input(). It's crucial to convert these inputs to float using float() because input() returns strings.
+It calls the appropriate area calculation function.
+It prints the calculated area.
+If the user enters 4, the break statement exits the while loop, and the program ends.
+If the user enters an invalid choice (not 1-4), it prints an error message.
+if __name__ == "__main__":: This ensures that the main() function is called only when the script is executed directly (not when it's imported as a module).  This is good practice in Python.
+
+How to run this code:
+
+Save the code as a .py file (e.g., area_calculator.py).
+Open a terminal or command prompt.
+Navigate to the directory where you saved the file.
+Run the code using python area_calculator.py.
+The menu will be displayed, and you can interact with the program.
